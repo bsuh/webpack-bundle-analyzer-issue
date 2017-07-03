@@ -1,0 +1,12 @@
+{
+  "name": "bundle-analyzer-issue",
+  "scripts": {
+    "test": "webpack --json > stats.json && webpack-bundle-analyzer stats.json dist/",
+    "test2": "webpack --config webpack.config2.js --json > stats2.json && webpack-bundle-analyzer stats2.json dist/"
+  },
+  "dependencies": {
+    "glob": "^7.1.2",
+    "webpack": "^3.0.0",
+    "webpack-bundle-analyzer": "^2.8.2"
+  }
+}
